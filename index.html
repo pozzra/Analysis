@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gold Trading Analysis</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/Images/Tranding.jpg" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Gold Trading Analysis Tool</h1>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" value="2020-01-01">
+      
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" value="2023-10-01">
+      
+      <button id="fetch-data-btn">Fetch Data</button>
+    </div>
+
+    <!-- Chart Section -->
+    <div class="chart-section">
+      <canvas id="gold-chart"></canvas>
+    </div>
+
+    <!-- Signals Table -->
+    <div class="signals-section">
+      <h2>Trading Signals</h2>
+      <table id="signals-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Close Price</th>
+            <th>SMA</th>
+            <th>RSI</th>
+            <th>MACD</th>
+            <th>Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
